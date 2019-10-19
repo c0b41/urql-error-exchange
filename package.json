@@ -1,0 +1,28 @@
+{
+  "name": "@c0b41/urql-error-exchange",
+  "version": "1.0.0",
+  "main": "dist/urql-error-exchange.js",
+  "module": "dist/urql-error-exchange.es.js",
+  "repository": "https://github.com/c0b41/urql-error-exchange",
+  "author": "c0b41",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "rollup -c rollup.config.js",
+    "watch": "rollup -w -c rollup.config.js",
+    "prepublishOnly": "run-s clean build"
+  },
+  "dependencies": {
+    "wonka": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.25.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "terser": "^4.3.9"
+  }
+}
